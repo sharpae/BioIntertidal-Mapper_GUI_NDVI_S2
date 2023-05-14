@@ -5,7 +5,7 @@ The NDVI-S2 Intertidal Habitat Mapping software presented here is a user-friendl
 
 ## Requeriments
 - Google Earth Engine activated account
-- Google Cloud installation
+- [Google Cloud installation](https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe?hl=es-419)
 - A GIS Software to map intertidal habitat NDVI
 - [World Tides API key](https://www.worldtides.info/home)
 
