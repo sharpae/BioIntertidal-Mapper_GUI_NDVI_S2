@@ -21,4 +21,6 @@ The NDVI-S2 Intertidal Habitat Mapping software presented here is a user-friendl
 
 ![Interface](https://github.com/sharpae/NDVI_S2_IntertidalMapping_GUI/blob/main/screenshots/Fig1.png?raw=true)
 
+Sample results:
+
 ![Results](https://github.com/sharpae/NDVI_S2_IntertidalMapping_GUI/blob/main/screenshots/Fig3.png?raw=true)
