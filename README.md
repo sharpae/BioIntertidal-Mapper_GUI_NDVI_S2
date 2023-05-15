@@ -9,7 +9,16 @@ The NDVI-S2 Intertidal Habitat Mapping software presented here is a user-friendl
 - A GIS Software to map intertidal habitat NDVI
 - [World Tides API key](https://www.worldtides.info/home)
 
+## Flow Diagram
+
+![Flow Diagram](https://github.com/sharpae/NDVI_S2_IntertidalMapping_GUI/blob/main/screenshots/Fig2.png?raw=true)
+
 ## Video Demo
-[title](https://www.example.com)
+
+[![NDVI Demo video](https://img.youtube.com/vi/XXXXXXXXXXX/0.jpg)](https://www.youtube.com/watch?v=XXXXXXXXXXXXX "NDVI Demo video")
 
 ## Screenshots
+
+![Interface](https://github.com/sharpae/NDVI_S2_IntertidalMapping_GUI/blob/main/screenshots/Fig1.png?raw=true)
+
+![Results](https://github.com/sharpae/NDVI_S2_IntertidalMapping_GUI/blob/main/screenshots/Fig3.tif?raw=true)
