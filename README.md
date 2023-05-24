@@ -1,7 +1,7 @@
-# NDVI S2 Intertidal Habitat Mapping (with GUI)
+# BioIntertidal Mapper (with GUI)
 
 ## Description
-The NDVI-S2 Intertidal Habitat Mapping software presented here is a user-friendly tool that automates the processing of Level-2 Sentinel-2 imagery to generate intertidal habitat maps. The program uses Google Earth Engine API and the WorldTides API to select images acquired during low tide within a specified time window. The selected images are then processed to calculate Normalized Difference Vegetation Index (NDVI), which is filtered based on intertidal photosynthetic community and study area. Maps are exported to a Google Drive folder in .tiff format. The program is designed to provide a simple solution for coastal zone managers and researchers to map intertidal habitats using free and publicly available satellite imagery. The graphical user interface facilitates the input of parameters and displays the progress and console output.
+BioIntertidal Mapper is a user-friendly tool, with a graphical user interface, that automates the selection and processing of Sentinel-2 imagery, to generate intertidal habitat maps. The software uses Google Earth Engine API and the WorldTides API to select imagery acquired at low tide within a specified timeframe. These images are subsequently processed to calculate a Normalized Difference Vegetation Index (NDVI), which is masked, based on a shapefile defining the area of interest. Maps are exported to a Google Drive folder. The program offers a simple solution for scientific and environmental manager to map intertidal photosynthetic communities, i.e. microphytobenthos, seaweeds, seagrasses, habitats using free and publicly available satellite imagery. 
 
 ## Requeriments
 - Google Earth Engine activated account
