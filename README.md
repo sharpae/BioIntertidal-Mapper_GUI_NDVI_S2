@@ -9,6 +9,10 @@ BioIntertidal Mapper is a user-friendly tool, with a graphical user interface, t
 - A GIS Software to map intertidal habitat NDVI
 - [World Tides API key](https://www.worldtides.info/home)
 
+## Graphical Abstract
+
+![Graphical Abstract](https://github.com/sharpae/NDVI_S2_IntertidalMapping_GUI/blob/main/screenshots/graphical_abstract.png?raw=true)
+
 ## Flow Diagram
 
 ![Flow Diagram](https://github.com/sharpae/NDVI_S2_IntertidalMapping_GUI/blob/main/screenshots/Fig2.png?raw=true)
