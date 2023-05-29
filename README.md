@@ -19,7 +19,7 @@ BioIntertidal Mapper is a user-friendly tool, with a graphical user interface, t
 
 ## Video Demo
 
-[![NDVI Demo video](https://img.youtube.com/vi/XXXXXXXXXXX/0.jpg)](https://www.youtube.com/watch?v=XXXXXXXXXXXXX "NDVI Demo video")
+[![NDVI Demo video](https://img.youtube.com/vi/OvQ1_HlO3IM/0.jpg)](https://youtu.be/OvQ1_HlO3IM)
 
 ## Screenshots
 
