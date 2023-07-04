@@ -52,7 +52,7 @@ def authenticate():
 
 # Default values for a list of parameters used in a function
 default_values = [
-    "53.35293", "-6.16435", "894509ce-8440-470a-9f57-8cd3931b55c7", "10", "14", "2021-06-01", "2021-08-30", "30", "T29UPV", "0.10", "1", "projects/ee-saraharo/assets/DollymountStrand_32629", "32629", "Dollymount_Strand"
+    "53.35293", "-6.16435", "eacc6042-df40-489b-935c-cc60685994ef", "10", "14", "2021-06-01", "2021-08-30", "30", "T29UPV", "0.10", "1", "projects/ee-saraharo/assets/DollymountStrand_32629", "32629", "Dollymount_Strand"
 ]
 
 # Function definition for enabling and filling in default values for text input fields
