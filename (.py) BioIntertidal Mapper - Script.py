@@ -204,8 +204,11 @@ def validate_parameters(lat, lon, keyAPIWorldTides, tile, geometry, epsg, start_
         return False, "Fields must not be empty."
 
     # Validate start_hour and end_hour of low tide time range
-    if not (0 <= start_hour <= 24 and 0 <= end_hour <= 24 and len(str(start_hour)) == 2 and len(str(end_hour)) == 2):
-        return False, "Low tide time range must be integers between 00 and 24."
+    try:
+        if not (0 <= int(start_hour) <= 24 and 0 <= int(end_hour) <= 24 and len(start_hour) == 2 and len(end_hour) == 2):
+            return False, "Low tide time range must be integers between 00 and 24."
+    except ValueError: 
+        return False, "Invalid input. Please input numbers between 00 and 24."
     
     date_pattern = re.compile(r'\d{4}-\d{2}-\d{2}')
     if not (date_pattern.fullmatch(start_date) and date_pattern.fullmatch(end_date)):
@@ -232,8 +235,8 @@ def main():
         lat = lat_entry.get()
         lon = lon_entry.get()
         keyAPIWorldTides = key_entry.get()
-        start_hour = int(start_hour_entry.get())
-        end_hour = int(end_hour_entry.get())
+        start_hour = start_hour_entry.get()
+        end_hour = end_hour_entry.get()
         start_date = start_date_entry.get()
         end_date = end_date_entry.get()
         cloudy_percentage = int(cloudy_percentage_entry.get())
@@ -253,7 +256,7 @@ def main():
             return
 
         # Call the process function with the input values
-        process(lat, lon, keyAPIWorldTides, start_hour, end_hour, start_date, end_date, cloudy_percentage, tile, start_ndvi, end_ndvi, geometry, epsg, folder_name)
+        process(lat, lon, keyAPIWorldTides, int(start_hour), int(end_hour), start_date, end_date, cloudy_percentage, tile, start_ndvi, end_ndvi, geometry, epsg, folder_name)
     except ValueError as ve:
         messagebox.showerror("Error", f"Invalid input value: {ve}")
         run_button.config(state="normal")
@@ -369,8 +372,6 @@ sara_label2.grid(row=len(fields) + 4, column=3, padx=25, pady=(2,15), sticky="E"
 
 progress_bar = ttk.Progressbar(root, orient="horizontal", length=300, mode="determinate")
 progress_bar.grid(row=len(fields) + 3, column=1, columnspan=2, pady=(15, 0))
-
-########################################################################
 
 # Redirect standard output (stdout) to the text widget
 sys.stdout = OutputText(console_output_text)
