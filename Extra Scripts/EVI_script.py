@@ -55,20 +55,21 @@ def export(img, img_date, geometry, folder_name, epsg, evi_low, evi_high):
     task.start()
 
 def main():
-    lat = 53.119880621881606
-    lon = -5.864685
-    keyAPIWorldTides = 'd8573945-6618-447a-b0b0-baa663bfc4db'
+    # Those parameters must be fulfilled
+    lat = 53.11
+    lon = -5.86
+    keyAPIWorldTides = '62746739-810a-4bc6-8351-1414dc164a1d'
     start_hour = 10
     end_hour = 14
-    start_date = '2022-09-18'
-    end_date = '2022-09-23'
-    cloudy_percentage = 100
-    folder_name = "Dollymount"
-    tiles = ["T16PSV","T18PGS"]
-    shapefile = "projects/ee-jonathanjimenezreina/assets/Dollymount"
+    start_date = '2021-07-15'
+    end_date = '2021-07-25'
+    cloudy_percentage = 30
+    folder_name = "Dollymount_Strand_withoutGUI"
+    tiles = ["T29UPV","T29UQV"]
+    shapefile = "projects/ee-saraharo/assets/DollymountStrand_32629"
     epsg = "32629"
     evi_low = -1
-    evi_high = 1  
+    evi_high = 1
 
     geometry = ee.FeatureCollection(shapefile)
     imgs = get_image_collection(geometry, cloudy_percentage, start_date, end_date)
@@ -106,3 +107,5 @@ def main():
         print("No images were found that meet the conditions.")
     else:
         print("Dates with low tides found: " + ", ".join(low_tide_dates))
+        
+main()
