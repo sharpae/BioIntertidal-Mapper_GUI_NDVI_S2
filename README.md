@@ -7,7 +7,7 @@ BioIntertidal Mapper is a user-friendly tool, with a graphical user interface, t
 - Google Earth Engine activated account
 - [Google Cloud installation](https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe?hl=es-419)
 - A GIS Software to map intertidal habitat NDVI
-- [World Tides API key](https://www.worldtides.info/home)
+- [World Tides API key](https://www.worldtides.info/home) (Copyright © 2014-2023 Brainware LLC)
 
 ## Graphical Abstract
 
